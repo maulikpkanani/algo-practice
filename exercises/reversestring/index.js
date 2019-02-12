@@ -7,8 +7,8 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse (str) {
+  // using split to split the string and using the reduce helper method to reverse the sting
 
-  //using split to split the string and using the reduce helper method to reverse the sting
   return str.split('').reduce((rev, char) => char + rev, '')
 }
 
