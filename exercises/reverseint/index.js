@@ -8,6 +8,19 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+function reverseInt (n) {
+  // Method to use toString()= to convert anything into string, split(), reverse(), join(), and parseInt()
 
-module.exports = reverseInt;
+  let reversed = parseInt(
+    n
+      .toString()
+      .split('')
+      .reverse()
+      .join('')
+  )
+
+  // Good use of the Math.sign() function to convert it into negative num
+  return reversed * Math.sign(n)
+}
+
+module.exports = reverseInt
