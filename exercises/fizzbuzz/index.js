@@ -12,6 +12,20 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz (n) {
+  // It is the simple question you have to print the number sill n
+  for (let i = 1; i <= n; i++) {
+    // Use the modulo operator and check it with &&
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log('fizzbuzz')
+    } else if (i % 3 === 0) {
+      console.log('fizz')
+    } else if (i % 5 === 0) {
+      console.log('buzz')
+    } else {
+      console.log(i)
+    }
+  }
+}
 
-module.exports = fizzBuzz;
+module.exports = fizzBuzz
